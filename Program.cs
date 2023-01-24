@@ -50,7 +50,7 @@ int seekNumber = int.Parse(Console.ReadLine()!);
 int[,] array = GetArray(rows, columns, 0, 20); 
 PrintArray(array);
 Console.WriteLine();
-if(seek (seekNumber) == true)
+if(Seek (seekNumber) == true)
 {
   Console.WriteLine("Заданное число найдено");  
 }
@@ -82,7 +82,7 @@ void PrintArray(int[,] array)
         Console.WriteLine();
     }
 }
-bool seek(int seekNumber)
+bool Seek(int seekNumber)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
