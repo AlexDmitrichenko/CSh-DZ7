@@ -100,7 +100,7 @@ bool Seek(int seekNumber)
 //5 9 2 3
 //8 4 2 4
 //Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
-Console.Write("Введите количество строк: ");
+/*Console.Write("Введите количество строк: ");
 int rows = int.Parse(Console.ReadLine()!);
 Console.Write("Введите количество столбцов: ");
 int columns = int.Parse(Console.ReadLine()!);
@@ -128,7 +128,8 @@ void PrintArray(int[,] array)
         }
         Console.WriteLine();
     }
-}
+}*/
+
 
 
 
