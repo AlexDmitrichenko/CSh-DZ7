@@ -106,6 +106,9 @@ Console.Write("Введите количество столбцов: ");
 int columns = int.Parse(Console.ReadLine()!);
 int[,] array = GetArray(rows, columns, 0, 10);
 PrintArray(array);
+Console.WriteLine();
+Average(array);
+//Methods---------------------------------------------------- 
 int[,] GetArray(int m, int n, int minValue, int maxValue)
 {
     int[,] result = new int[m, n];
@@ -128,9 +131,19 @@ void PrintArray(int[,] array)
         }
         Console.WriteLine();
     }
+}
+void Average(int[,] array)
+{
+for (int j = 0; j < array.GetLength(1); j++)
+{
+    double sum = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        sum += array[i, j];
+    }
+    Console.Write($"{(sum / array.GetLength(0)):F1}; ");
+}
 }*/
-
-
 
 
 
